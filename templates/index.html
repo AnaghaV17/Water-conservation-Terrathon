@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="/Users/niranjan/Downloads/test/static/index.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div className='wrapper'>
+        <h1>Enter averaged out readings obtained from a water body</h1>
+        <form>
+            <div className='input-box'>
+                Name of lake: 
+                <input type="text" name='Light' placeholder='Eg: Name of lake' required/>
+            </div>
+        </form>
+        <form action="/entry" method='POST' >
+            
+            <div className='input-box'>
+                Light Reading
+                <input type="number" name='Light' placeholder='Eg: Light reading' required/>
+                
+            </div>
+            <div className='input-box'>
+                Nitrate Reading
+                <input type="number" name='Nitrate' placeholder='Nitrate concentration' required/>
+                
+            </div>
+            <div className='input-box'>
+                Iron Reading
+                <input type="number" name='Iron' placeholder='Iron concentration' required/>
+                
+            </div>
+            <div className='input-box'>
+                Phosphate reading
+                <input type="number" name='Phosphate' placeholder='Phosphate concentration' required/>
+                
+                
+            </div>
+            <div className='input-box'>
+                Temperature Reading
+                <input type="number" name='Temperature' placeholder='in °C' required/>
+                
+            </div>
+            <div className='input-box'>
+                pH Reading
+               <input type="number" name = 'pH' placeholder="0-14" required/>
+               
+           </div>
+           <div className='input-box'>
+            CO2 Reading
+            <input type="number" name ='CO2' placeholder='CO2 concentration' required/>
+            
+            </div>
+            <div className="input-box">
+                Hardness
+                <input type="number" name = 'Hardness'  placeholder='Hardness' required/>
+            </div>
+            <div className='input-box'>
+                Solids
+                <input type="number" name = 'Solids' placeholder='Solids' required/>
+                
+            </div>
+            <div className='input-box'>
+                Chloramines
+                <input type="number" name = 'Chloramines' placeholder='Chloramines' required/>
+                
+            </div>
+            <div className='input-box'>
+                Sulfate
+                <input type="number" name ='Sulfates' placeholder='Sulfate' required/>
+                
+            </div>
+            <div className='input-box'>
+                Conductivity
+                <input type="number" name = 'Conductivity' placeholder='Conductivity' required/>
+                
+            </div>
+            <div className='input-box'>
+                Organic Carbon
+                <input type="number" name='Organic_carbon' placeholder='Organic Carbon' required/>
+                
+            </div>
+            <div className='input-box'>
+                Trihalome
+                <input type="number" name = 'Trihalome' placeholder='Trihalome' required/>
+                
+            </div>
+            <div className='input-box'>
+                Turbidity
+                <input type="number" name = 'Turbidity' placeholder='Turbidity' required/>
+                
+            </div>
+            
+
+
+
+
+            
+            
+            
+            
+            
+            
+           
+           
+                      <button type="submit">Submit Data</button>
+            
+        </form>
+
+        <br>
+        {{pred}}<br>
+        <br>
+        {{bhai}}<br>
+    </div>
+</body>
+</html>

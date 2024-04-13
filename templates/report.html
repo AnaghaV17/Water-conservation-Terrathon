@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lake Report Card</title>
+  <link rel="stylesheet" href="/Users/niranjan/Downloads/test/static/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Your Lake's Realtime Report Card</h1>
+    <div class="info">
+      <p>Lake Name: <span id="lake-name">Yediyur Lake</span></p>
+      <p>Eutrophication / Possible Algal Bloom Occurence in the near future: <br><span id="eutrophication">{{algal}}</span></p>
+      <p>Is the water turning Potable?: <br><span id="potable">{{potable}}</span></p>
+      <p>Water Quality Index: <br><span id="water-quality">{{wqi}}</span></p>
+      <hr style="color:black;">
+      <p>Data which we received to feed our Machine learning algorithm: <br></p>
+    </div>
+    <div id="data" style="text-align:center;">
+        
+        pH: {{ph}} |
+        Temperature: {{temperature}} |
+        Nitrate: {{nitrate}} |
+        CO2 Reading: {{co2}} |
+        Hardness: {{hardness}} |
+        Solids: {{solids}} |
+        Chloramines: {{chloramines}} |
+        Sulfate: {{sulfate}} |
+        Conductivity: {{conductivity}} |
+        Organic Carbon: {{oc}} |
+        Trihalome: {{trihalome}} |
+        Turbidity: {{turbidity}} |
+        Phosphate reading: {{phosphate}} |
+        Iron Reading: {{iron}} |
+        Light Reading: {{light}}
+        </div>
+  </div>
+</body>
+</html>
